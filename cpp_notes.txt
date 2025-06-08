@@ -1,20 +1,35 @@
 Common
-
 > Main is the only function where the return statement can be avoided.
 > In general all the standard libraries are stored in namespace std.
->
+> Type of a variable let us know what type of data can be stored and the operations possible on the variable.
+> 
+
+
+Comments
+> Two types of Comments:
+	single line(//): Everything to the right of the slashed on the current line is ignored by the Compiler
+	paired(/**/): two delemeters they ignore a block of statements. The block can be started anywhere and closed anywhere.
+> Compiler ignores comments so they have no effect on the program's behavior or performance.
+> Comments cannot be nested.
+> 
+
+
 
 Variables
+> The default value of a variable is zero in golbal scope and random value if it is defined inside a function.
 > We cannot define variables of unsigned float the same follows for bool.
 > The string literal which we use is of type const char[].
 > false, true are literals of type bool.
 > 
+
+
 
 Arrays
 > Array's store objects, references are not objects so we cannot create array of references.
 > arrays cannot be copied/moved directly. (Except if the compilers provide such functionality)
 > If an array is used to store with auto it is treated as a pointer rather than a group of objects with a specific size.
 > 
+
 
 Q&A
 
@@ -29,7 +44,7 @@ Q&A
 
 > What happens if we give more initializer values to array than it's size?
 	Compiler throws error.
-
+	int ar[2] ={1,2,3,4};
 
 
 Functions
@@ -37,7 +52,6 @@ Functions
 > A function generally have 4 parts:
 	Function Name, Return Type, parameters, Function Body.
 > A function body is a block of statements enclosed in a curly braces. This cannot be a single open statement as condition statements.
-
 
 
 Q&A
@@ -51,12 +65,14 @@ Q&A
 > 
 
 
+
 Classes
 
 > Each and every method of a class can have their own static members, including constructors.
 > Copy and move constructors are created even after we defined our own constructor.
 > Functions can be left declared but not defined as long as they are not used by the object defined by the class.
 > 
+
 
 Q&A
 

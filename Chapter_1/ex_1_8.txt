@@ -1,0 +1,6 @@
+Exercise 1.8: Indicate which, if any, of the following output statements
+ are legal:
+ std::cout << "/*"; // ans: Correct o/p: /*
+ std::cout << "*/"; // ans: Correct o/p: */ 
+ std::cout << /* "*/" */; // ans: error(the right side has no expression)
+ std::cout << /*  "*/" /* "/*"  */; // ans: Correct o/p: /*
