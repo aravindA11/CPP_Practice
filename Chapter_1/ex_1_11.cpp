@@ -15,8 +15,9 @@ int main() {
     int end = num1 > num2 ? num1 : num2;
 
     // Print each number in the range
-    for (int i = start; i <= end; ++i) {
-        std::cout << i << std::endl;
+    while(start <= end) {
+        std::cout << start << std::endl;
+        ++start; // Increment start to move to the next number
     }
 
     return 0;

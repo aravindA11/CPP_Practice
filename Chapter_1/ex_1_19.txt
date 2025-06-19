@@ -1,0 +1,6 @@
+Exercise 1.19: Revise the program you wrote for the exercises in § 1.4.1
+ (p. 13) that printed a range of numbers so that it handles input in which
+ the first number is smaller than the second.
+ Ans: I've handled the condition in the program to count the numbers if the second one is smaller.
+ Go through line 15,16 in ex_1_11 to understand the behavior.
+ 

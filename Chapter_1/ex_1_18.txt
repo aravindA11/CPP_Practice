@@ -1,0 +1,6 @@
+Exercise 1.18: Compile and run the program from this section giving it
+ only equal values as input. Run it again giving it values in which no
+ number is repeated.
+
+Ans: If the input values are all equal, the program will count that value and print it only once with its total count at the end.
+     If there are no duplicated values, each value will be printed with a count of 1.

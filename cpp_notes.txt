@@ -2,7 +2,10 @@ Common
 > Main is the only function where the return statement can be avoided.
 > In general all the standard libraries are stored in namespace std.
 > Type of a variable let us know what type of data can be stored and the operations possible on the variable.
-> 
+> All the headerfiles must be written in single line.
+> Statements in a program are executed sequentually. 
+> A block({}) is also a statement.
+> A ; is a null statement.
 
 
 Comments
@@ -11,6 +14,9 @@ Comments
 	paired(/**/): two delemeters they ignore a block of statements. The block can be started anywhere and closed anywhere.
 > Compiler ignores comments so they have no effect on the program's behavior or performance.
 > Comments cannot be nested.
+> Comments are not allowed to be written after header files
+> Everyname used in a c++ program must be declared before using it.
+> Care should be take for scope of declarations. These leads to disastrus results which are hard to find.
 > 
 
 
@@ -46,6 +52,23 @@ Q&A
 	Compiler throws error.
 	int ar[2] ={1,2,3,4};
 
+Flow of Control
+> flow-of-control statements that allow for more complicated execution paths.
+	While Statement:
+		> It repeatedly executes a section so long as a given condition is true.
+		Syntex:
+			While(condition)
+				statement
+	For Statement:
+		> A for statement has 2 parts:
+			A header and a body
+		> A header itself consists of 3 parts:
+			an init statement, a condition, an expression
+		> init statement is executed once and then the loop starts as long as the condition becomes false, the expression executes at the end of each loop.
+	If Statement:
+		> It allows executing a statement when the condition validates to true.
+
+
 
 Functions
 
@@ -67,7 +90,7 @@ Q&A
 
 
 Classes
-
+> Every class defines a type. The type name is the same as the name of the class.
 > Each and every method of a class can have their own static members, including constructors.
 > Copy and move constructors are created even after we defined our own constructor.
 > Functions can be left declared but not defined as long as they are not used by the object defined by the class.
@@ -80,4 +103,5 @@ Q&A
 	No, they should not initialise them in initialiser list
 > What are the use cases of initialzer list?
 	They are mainly used to initlaise constant variables, references, derived class initilize their base part
-> 
+> Can we use this in initializer list?
+	Yes, using this in initializer list is allowed.
