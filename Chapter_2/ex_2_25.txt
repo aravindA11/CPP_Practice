@@ -1,0 +1,5 @@
+ Exercise 2.25: Determine the types and values of each of the following
+ variables.
+ (a) int* ip, &r = ip;// ip is a pointer r is a reference to int assigining pointer to reference is error
+ (b) int i, *ip = 0; // i is a integer random value and ip is a pointer to int assigned to nullptr
+ (c) int* ip, ip2;// ip is a pointer and ip2 is a int variable both are unintialized so random values are present

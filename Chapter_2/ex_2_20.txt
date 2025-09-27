@@ -1,0 +1,7 @@
+ Exercise 2.20: What does the following program do?
+ int i = 42;
+ int *p1 = &i;
+ *p1 = *p1 * *p1;
+
+Ans: this program assigns address of int i to p1.
+Then using p1 the value is squared and stored in i.

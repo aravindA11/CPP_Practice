@@ -1,0 +1,7 @@
+Exercise 2.1: What are the differences between int, long, long
+ long, and short? Between an unsigned and a signed type? Between a
+ float and a double?
+
+ Ans: size is the main differencce between between int, long, long
+ long, and short. Signed stores both -ve and +ve values where as unsigned stores onlie +ve with zero.
+ Along with size precision values is the additional differencce between float, double.

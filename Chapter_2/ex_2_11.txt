@@ -1,0 +1,9 @@
+Exercise 2.11: Explain whether each of the following is a declaration or
+ a definition:
+ (a) extern int ix = 1024;// Ans: this is a definition
+ (b) int iy; // Ans: this is a definition
+ (c) extern int iz; // Ans: this is a declaration
+
+ Reason(a): extern is initialized with a value so it is a definition
+ Reason(b): Varaible is defined
+ Reason(c): extern is used with the Varaible this is a declaration

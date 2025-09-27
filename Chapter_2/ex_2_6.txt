@@ -1,0 +1,4 @@
+ Exercise 2.6: What, if any, are the differences between the following
+ definitions:
+ int month = 9, day = 7; // defines 2 variables with respective values
+ int month = 09, day = 07; // defines 2 variables but assigning 09 to month is error but day works fine

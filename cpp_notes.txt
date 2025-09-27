@@ -1,5 +1,4 @@
 Common
-> Main is the only function where the return statement can be avoided.
 > In general all the standard libraries are stored in namespace std.
 > Type of a variable let us know what type of data can be stored and the operations possible on the variable.
 > All the headerfiles must be written in single line.
@@ -9,25 +8,63 @@ Common
 
 
 Comments
+========
 > Two types of Comments:
 	single line(//): Everything to the right of the slashed on the current line is ignored by the Compiler
 	paired(/**/): two delemeters they ignore a block of statements. The block can be started anywhere and closed anywhere.
 > Compiler ignores comments so they have no effect on the program's behavior or performance.
 > Comments cannot be nested.
 > Comments are not allowed to be written after header files
-> Everyname used in a c++ program must be declared before using it.
-> Care should be take for scope of declarations. These leads to disastrus results which are hard to find.
 > 
 
 
+Built-in Types:
+===============
+Primitive types: arithematic + void
+arithematic: integral types(int, char, bool, long) + floating value types(float, double)
+> integral types except bool and widechar types can be signed and unsigned.
+> We cannot define variables of unsigned float the same follows for bool.
+> 
 
 Variables
+> A variable represents a built-int type or a user defined type
+> A variable name cannot start with a number. _, alphabets are allowed.
+> Numbers can be part of the variable names.
 > The default value of a variable is zero in golbal scope and random value if it is defined inside a function.
-> We cannot define variables of unsigned float the same follows for bool.
+
+> Variable follows scope where it is defined.
+> Everyname used in a c++ program must be declared before using it.
+> Care should be take for scope of declarations. These leads to disastrus results which are hard to find.
+
+literals
 > The string literal which we use is of type const char[].
 > false, true are literals of type bool.
-> 
 
+Compound Types:
+==============
+> In order to understand compound types always read from right to left.
+> Types which are formed by modifying original types are called compound types.
+
+references
+> References are of the for &d.
+> They bind to the objects they are initialised. hence they need to be initialised by default.
+> They are not individual objects in their own right.
+> we can have references to pointers.
+	eg: int *&p;
+> References doesn't have top level constant.
+> Since, references are not objects we can't create pointers to references.
+
+
+Pointers
+> pointers are of the form type *d
+> They store address of an object.
+> They are individual objects in their own right.
+> The type of the pointer and the object must be same (except Inheritence).
+> By default pointers are not initialised in block scope.
+> We can initlise pointeres to nullptr, 0 by default to avoid undefined behavior.
+> Accessing the data of a nullptr pointer or unintialised pointer gives undefined behavior.
+> Two pointers can be compared if they are of same type. Error is thrown if they are of different type(exception for void types).
+> pointer type is the only type which can represent both top level and low level constant independently.
 
 
 Arrays
@@ -45,7 +82,7 @@ Q&A
 	
 	struct fun {
 	int x;
-	int p[0];
+	char p[0];
 	};
 
 > What happens if we give more initializer values to array than it's size?
@@ -71,11 +108,12 @@ Flow of Control
 
 
 Functions
+=========
 
 > A function generally have 4 parts:
 	Function Name, Return Type, parameters, Function Body.
 > A function body is a block of statements enclosed in a curly braces. This cannot be a single open statement as condition statements.
-
+> Main is the only function where the return statement can be avoided.
 
 Q&A
 
@@ -90,18 +128,57 @@ Q&A
 
 
 Classes
+=======
 > Every class defines a type. The type name is the same as the name of the class.
-> Each and every method of a class can have their own static members, including constructors.
+> Eaach and every class have a default constructor, destructor, copy constructor, copy operator, move constructor, move operator defined by the compilers.
 > Copy and move constructors are created even after we defined our own constructor.
-> Functions can be left declared but not defined as long as they are not used by the object defined by the class.
-> 
+> Accesses specifiers are applicable to every entitiy(methods, constructors, static variables/methods, using declarations) present in the class except for friends.
 
+Initializer List:
+> Initializer list allows providing values to constant objects
+> The list members are initialized based on the order of their declarations in the class not the way they are written in the initilzer list
+> Initializer list values are given preference over in class initialzation values.
+> It is mainly used for initialising constants, references, base part of derived classes.
+
+Functions inside Classes:
+> Functions inside classes are called methods
+> Each and every method of a class can have their own static members, including constructors they are indipendent of objects.
+> Functions can be left declared but not defined as long as they are not used by the object defined by the class.
+> Methods and destructor are the only entities that can be override in Inheritence of classes
+> Static functions can be called without creating objects.
+> this is the default parameter passed to every method of a class. It is not applicable with static functions
 
 Q&A
-
 > Can static members be initialised in initializer list?
 	No, they should not initialise them in initialiser list
 > What are the use cases of initialzer list?
-	They are mainly used to initlaise constant variables, references, derived class initilize their base part
+	They are mainly used to initlaize constant variables, references, derived class initilize their base part
 > Can we use this in initializer list?
 	Yes, using this in initializer list is allowed.
+> How cin can be used as a condition for control statements?
+	It is done via bool operator ooverloading by the class
+> Can we call a method of a class without creating a object?
+	Yes, it is possible with class ptr without any members of the object called.
+
+	#include<iostream>
+	using namespace std;
+
+	class Sample {
+		int a=10;
+		public:
+		void print(){
+			std::cout<<"print function being called"<<std::endl;
+			// std::cout<<a; // Error as we are calling on a nullptr 
+		}
+	};
+
+	int main() {
+		Sample *sptr = nullptr;
+		sptr->print();
+		return 0;
+	}
+> Can we create and initialise static member of a class within the class?
+	yes, we can them for constant members and when the static member is inline
+> Can an object access private members of a different object of same class type?
+	yes, it is possible when the object is accessed by methods of same class or by friends
+> 

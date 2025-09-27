@@ -1,0 +1,9 @@
+Exercise 2.40: Write your own version of the Sales_data class.
+Ans:
+
+struct sales_data{
+    std::string book_no;
+    double reveune = 0;
+    double curr_average = 0;
+    unsigned units_sold = 0;
+};

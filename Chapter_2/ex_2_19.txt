@@ -1,0 +1,6 @@
+ Exercise 2.19: Explain the key differences between pointers and
+ references.
+
+Ans: pointers are objects which store the address of variables whereas references
+ are names bind to a initialized object. Initialization is mandatory for references
+ where as it is not necessory for pointers.

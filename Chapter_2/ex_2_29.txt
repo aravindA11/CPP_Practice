@@ -1,0 +1,16 @@
+Exercise 2.28: Explain the following definitions. Identify any that are
+ illegal.
+ (a) int i, *const cp;// Ans: cp needs to be initialised
+ (b) int *p1, *const p2; // Ans: p2 needs to be initialised
+ (c) const int ic, &r = ic; // Ans: ic must be initialised
+ (d) const int *const p3; // Ans: p3 needs to be initialised
+ (e) const int *p; // correct
+
+Exercise 2.29: Uing the variables in the previous exercise, which of the
+ following assignments are legal? Explain why.
+ (a) i = ic; // Ans: correct
+ (b) p1 = p3; // Ans: error low-level constant are not same
+ (c) p1 = &ic; // Ans: error low-level constant are not same
+ (d) p3 = &ic; // Ans: p3 is a constant pointer and cannot be changed
+ (e) p2 = p1; // Ans: p2 is a constant pointer cannot be changed
+ (f) ic = *p3; // Ans: ic is constant so it cannot be changed

@@ -1,0 +1,6 @@
+ Exercise 2.26: Which of the following are legal? For those that are
+ illegal, explain why.
+ (a) const int buf; // Ans: const needs to be initialised
+ (b) int cnt = 0; // Ans: okay
+ (c) const int sz = cnt;// Ans: okay
+ (d) ++cnt; ++sz;// Ans: sz can't be incremented cnt increment is okay

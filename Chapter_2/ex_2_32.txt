@@ -1,0 +1,5 @@
+Exercise 2.32: Is the following code legal or not? If not, how might you
+ make it legal?
+ int null = 0, *p = null;
+ Ans:
+ in order to correct int null = 0, *p = 0;

@@ -1,0 +1,7 @@
+Exercise 2.36: In the following code, determine the type of each variable
+ and the value each variable has when the code finishes:
+ int a = 3, b = 4;
+ decltype(a) c = a; // Ans: c is int
+ decltype((b)) d = a; // Ans: d is int&
+ ++c; // increments c to 4
+ ++d; // increments d which referes to a to 4

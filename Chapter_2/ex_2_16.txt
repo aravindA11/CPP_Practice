@@ -1,0 +1,7 @@
+ Exercise 2.16: Which, if any, of the following assignments are invalid? If
+ they are valid, explain what they do.
+ int i = 0, &r1 = i; double d = 0, &r2 = d;
+ (a) r2 = 3.14159; // Ans: valid, r2 has 3.14159
+ (b) r2 = r1; // Ans:valid, r2 to 0
+ (c) i = r2; // Ans: valid, i to 0
+ (d) r1 = d; // Ans: valid, r1 to 0

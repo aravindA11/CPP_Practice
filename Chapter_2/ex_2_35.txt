@@ -1,0 +1,8 @@
+ Exercise 2.35: Determine the types deduced in each of the following
+ definitions. Once you’ve figured out the types, write a program to see
+ whether you were correct.
+ const int i = 42;
+ auto j = i;// Ans: j is int 
+ const auto &k = i; // Ans: k is reference to const int
+ auto *p = &i; // Ans: p is a pointer to const int
+ const auto j2 = i, &k2 = i; // j2 is constant int and k2 is reference to const int

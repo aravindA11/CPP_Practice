@@ -1,0 +1,6 @@
+Exercise 2.21: Explain each of the following definitions. Indicate whether
+ any are illegal and, if so, why.
+ int i = 0;
+ (a) double* dp = &i; // Ans: wrong. the obj and pointer type are different
+ (b) int *ip = i; // Ans: Wrong. the value of i is assigned to ip
+ (c) int *p = &i; // Ans: Correct

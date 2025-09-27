@@ -1,0 +1,6 @@
+Exercise 2.15: Which of the following definitions, if any, are invalid?
+ Why?
+ (a) int ival = 1.01; // Ans: valid, the .01 is truncated
+ (b) int &rval1 = 1.01; // Ans: invalid, reference can't be initialized with a value
+ (c) int &rval2 = ival; //Ans: valid
+ (d) int &rval3; // Ans: invalid, the reference is not initialized

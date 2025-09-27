@@ -1,0 +1,4 @@
+ Exercise 2.22: Assuming p is a pointer to int, explain the following
+ code:
+ if (p) // ... Ans: checks weather p is null or not
+ if (*p) // ... Ans: checks if the value stored is not zero in the underlying object

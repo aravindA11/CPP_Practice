@@ -1,0 +1,9 @@
+ Exercise 2.10: What are the initial values, if any, of each of the following
+ variables?
+ std::string global_str; // Ans: initialized to empty string
+ int global_int; // Ans: initialized to zero
+ int main()
+ {
+    int local_int; // Ans: the value is not initialized with specific value
+    std::string local_str; // Ans: initialized to empty string
+ }

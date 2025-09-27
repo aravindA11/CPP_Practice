@@ -1,0 +1,9 @@
+ Exercise 2.27: Which of the following initializations are legal? Explain
+ why.
+ (a) int i = -1, &r = 0; // Ans: it's error to  initialise referece with literal
+ (b) int *const p2 = &i2; // Ans: it's correct but p2 cannot be changed
+ (c) const int i = -1, &r = 0; // Ans: correct
+ (d) const int *const p3 = &i2; // Ans: correct
+ (e) const int *p1 = &i2; // Ans: correct and we can't use p1 to change the value of i2 
+ (f) const int &const r2;// Ans: error referece cannot be const and needs to be initialised
+ (g) const int i2 = i, &r = i; // Ans: correct

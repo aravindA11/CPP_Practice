@@ -1,0 +1,5 @@
+Exercise 2.23: Given a pointer p, can you determine whether p points to
+ a valid object? If so, how? If not, why not?
+
+ Ans: No there is no possible way to find whether p points to a valid pointer.
+ unless p is initialized to nullptr whenever it is not pointing to an obj.

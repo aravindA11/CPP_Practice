@@ -1,0 +1,7 @@
+Exercise 2.28: Explain the following definitions. Identify any that are
+ illegal.
+ (a) int i, *const cp;// Ans: cp needs to be initialised
+ (b) int *p1, *const p2; // Ans: p2 needs to be initialised
+ (c) const int ic, &r = ic; // Ans: correct
+ (d) const int *const p3; // Ans: p3 needs to be initialised
+ (e) const int *p; // correct

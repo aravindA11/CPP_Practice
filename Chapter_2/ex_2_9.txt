@@ -1,0 +1,18 @@
+Exercise 2.9: Explain the following definitions. For those that are illegal,
+ explain what’s wrong and how to correct it.
+ (a) std::cin >> int input_value; // Ans: cin is expectiong a value to print
+ (b) int i = { 3.14 }; // Ans: value is lost so it can't be initialized with flower brackets
+ (c) double salary = wage = 9999.99; // Ans: Two variables can't be defined and assigned at a same time  
+ (d) int i = 3.14; // Ans: This works fine value gets truncated
+
+
+ other possible way to write (c):
+
+ int main() {
+    double wage;
+    double salary = wage = 9999.99;
+ }
+
+ int main() {
+    double wage,salary = wage = 9999.99;
+ }
