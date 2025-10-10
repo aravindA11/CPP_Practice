@@ -1,0 +1,6 @@
+ Exercise 3.12: Which, if any, of the following vector definitions are in
+ error? For those that are legal, explain what the definition does. For
+ those that are not legal, explain why they are illegal.
+ (a) vector<vector<int>> ivec; // Ans: after c++11 this is legal
+ (b) vector<string> svec = ivec; // Ans: illegal vector<int> cannot be as string
+ (c) vector<string> svec(10, "null"); // Ans: all 10 strings will have value null

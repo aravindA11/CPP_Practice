@@ -1,0 +1,9 @@
+Exercise 3.37: What does the following program do?
+const char ca[] = {'h', 'e', 'l', 'l', 'o'};
+const char *cp = ca;
+while (*cp) {
+cout << *cp << endl;
+++cp;
+}
+
+Ans: the program keeps on printing until it hits null charachter. It prints random values after 'o'.

@@ -1,0 +1,10 @@
+Exercise 3.18: Is the following program legal? If not, how might you fix
+ it?
+ vector<int> ivec;
+ ivec[0] = 42;
+
+ Ans: the program is wrong.
+correct way:
+vector<int> ivec;
+if(ivec.size())
+    ivec[0] = 42;

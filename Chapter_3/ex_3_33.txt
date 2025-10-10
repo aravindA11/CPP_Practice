@@ -1,0 +1,12 @@
+Exercise 3.33: What would happen if we did not initialize the scores
+ array in the program on page 116?
+
+ program:
+unsigned scores[11] = {}; // 11 buckets, all value initialized to 0
+unsigned grade;
+while (cin >> grade) {
+if (grade <= 100)
+    ++scores[grade/10]; // increment the counter for the current cluster
+}
+
+Ans: if scores is not initialised then the values are default initialised and will print random values.

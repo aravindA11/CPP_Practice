@@ -71,8 +71,9 @@ Arrays
 > Array's store objects, references are not objects so we cannot create array of references.
 > arrays cannot be copied/moved directly. (Except if the compilers provide such functionality)
 > If an array is used to store with auto it is treated as a pointer rather than a group of objects with a specific size.
-> 
-
+> Array's use subscript operator defined by the language.
+> It can be easier to understand array declarations by starting with the array’s name and reading them from the inside out.
+> Using auto on arrays will deduce pointer to the type of array not array of elements.
 
 Q&A
 
@@ -88,8 +89,20 @@ Q&A
 > What happens if we give more initializer values to array than it's size?
 	Compiler throws error.
 	int ar[2] ={1,2,3,4};
+> What happens if we compare these two arrays?
+int ar1[5] = {1,2,3,4,5};
+    int ar2[5] = {1,2,3,4,5};
+
+	if(ar1 > ar2)
+		cout<<"ar1 is bigger";
+	else
+		cout<<"ar2 is bigger";
+	here the comparision happens on the pointer value of ar1, ar2 rather than on elements.
+> How to deduce array using auto?
+	there is no way to do so.
 
 Flow of Control
+==============
 > flow-of-control statements that allow for more complicated execution paths.
 	While Statement:
 		> It repeatedly executes a section so long as a given condition is true.

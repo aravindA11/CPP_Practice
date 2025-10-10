@@ -1,0 +1,8 @@
+Here are the key drawbacks of using arrays instead of vectors in C++:
+
+1. Fixed size: Arrays have a fixed size that must be known at compile time (for static arrays) or allocation time. Unlike vectors, they cannot grow or shrink dynamically.
+2. Cannot be easily copied: Unlike vectors, arrays don't support simple assignment operations for copying.
+3. No built-in size tracking: Arrays don't know their own size. You must track the size separately, while vectors have the .size() method.
+4. No automatic cleanup: For dynamically allocated arrays, you must manually manage memory (delete[]). Vectors handle memory management automatically.
+
+This is why vectors are generally preferred over arrays in modern C++ unless there are specific performance or compatibility requirements.

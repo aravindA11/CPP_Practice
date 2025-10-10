@@ -1,0 +1,6 @@
+ Exercise 3.26: In the binary search program on page 
+3.3.3 (p.  112, why did we write mid = beg + (end - beg) / 2; 
+instead of mid = (beg + end) /2;?
+
+Ans: There is no addition operator between 2 iterators. and writing in this way helps us
+ bound the values to the range if the elements count is more than integer limit.

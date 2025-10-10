@@ -1,0 +1,5 @@
+Exercise 3.3: Explain how whitespace characters are handled in the
+string input operator and in the getline function.
+
+Ans: In case of input operator whitespace marks end of input. 
+At the same time if getline is used then it reads the whitespace charachters as it is.

@@ -1,0 +1,9 @@
+ Exercise 3.13: How many elements are there in each of the following
+ vectors? What are the values of the elements?
+ (a) vector<int> v1; // Ans: size: 0
+ (b) vector<int> v2(10); // Ans: size: 10 values are initilised to 0
+ (c) vector<int> v3(10, 42); // Ans: size: 10 values are initilised to 42
+ (d) vector<int> v4{10}; // Ans: size: 1 value: 10
+ (e) vector<int> v5{10, 42}; // Ans: size: 2 values: 10,42
+ (f) vector<string> v6{10}; // Ans: size : 10 value: ""
+ (g) vector<string> v7{10, "hi"}; //Ans: size: 10 value: "hi"

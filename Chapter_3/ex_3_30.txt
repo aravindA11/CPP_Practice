@@ -1,0 +1,9 @@
+Exercise 3.30: Identify the indexing errors in the following code:
+ constexpr size_t array_size = 10;
+ int ia[array_size];
+for (size_t ix = 1; ix <= array_size; ++ix)
+      ia[ix] = ix;
+Ans: the for loop is iterated from 1 through 10 where 10 is out of bound.
+correct loop:
+    for (size_t ix = 0; ix < array_size; ++ix)
+        ia[ix] = ix;

@@ -1,0 +1,8 @@
+Exercise 3.27: Assuming txt_size is a function that takes no
+ arguments and returns an int value, which of the following definitions
+ are illegal? Explain why.
+ unsigned buf_size = 1024;
+ (a) int ia[buf_size]; // Ans: illegal as buf_size is not constexpr
+ (b) int ia[4 * 7 - 14]; // Ans: leagal 
+ (c) int ia[txt_size()]; // Ans: illegal as txt_size doesn't return constexpr
+ (d) char st[11] = "fundamental"; // Ans: illegal as there is no space for '\0'
