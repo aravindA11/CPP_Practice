@@ -1,0 +1,10 @@
+ Exercise 4.20: Assuming that iter is a
+ vector<string>::iterator, indicate which, if any, of the following
+ expressions are legal. Explain the behavior of the legal expressions and
+ why those that aren’t legal are in error.
+ (a) *iter++; // Ans: undefined behavior if vector is emtpy. else dereferes to the current element and increments iter to next 
+ (b) (*iter)++; // Ans: illegal as there is no ++ operator of string
+ (c) *iter.empty(); // Ans: illegal as we need to dereference first and then check if string is empty
+ (d) iter->empty(); // Ans: leagal
+ (e) ++*iter; Ans: 
+ (f) iter++->empty();

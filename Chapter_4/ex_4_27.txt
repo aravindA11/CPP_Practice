@@ -1,0 +1,12 @@
+Exercise 4.27: What is the result of each of these expressions?
+unsigned long ul1 = 3, ul2 = 7;
+(a) ul1 & ul2
+(b) ul1 | ul2
+(c) ul1 && ul2
+(d) ul1 || ul2
+
+Ans:
+(a) ul1 & ul2  // Ans: 1
+(b) ul1 | ul2  // Ans: 7
+(c) ul1 && ul2 // Ans: true
+(d) ul1 || ul2 // Ans: true

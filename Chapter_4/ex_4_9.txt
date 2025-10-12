@@ -1,0 +1,5 @@
+Exercise 4.9: Explain the behavior of the condition in the following if:
+ const char *cp = "Hello World";
+ if (cp && *cp)
+
+Ans: it checks if the pointer is valid and dereference has a value.

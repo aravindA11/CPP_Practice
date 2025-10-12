@@ -1,0 +1,7 @@
+Exercise 4.33: Using Table 4.12 (p. 
+166) explain what the following
+ expression does:
+ someValue ? ++x, ++y : --x, --y
+
+Ans: if there some value in someValue then x,y increments their value and y's previous value is returned.
+    If the condition failes then x,y values decrement by 1 and y's value is returned.

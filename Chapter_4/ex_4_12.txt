@@ -1,0 +1,3 @@
+ Exercise 4.12: Assuming i, j, and k are all ints, explain what i != j
+ < k means.
+ Ans: it means that i!=j evaluates true or false which comares with k.

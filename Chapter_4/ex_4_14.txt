@@ -1,0 +1,6 @@
+ Exercise 4.14: Explain what happens in each of the if tests:
+ if (42 = i)   //  ...
+ if (i = 42)   //  ...
+
+ Ans: for if(42 = i) it is compile time error because left hand should be lvalue.
+      at the same time if(i = 42) it executes and checks i if it is not zero.

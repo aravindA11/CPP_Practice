@@ -1,0 +1,12 @@
+Exercise 4.19: Given that ptr points to an int, that vec is a
+vector<int>, and that ival is an int, explain the behavior of each of
+these expressions. Which, if any, are likely to be incorrect? Why? How
+might each be corrected?
+(a) ptr != 0 && *ptr++
+(b) ival++ && ival
+(c) vec[ival++] <= vec[ival]
+
+Ans: 
+(a) ptr != 0 && (*ptr)++
+(b) ival++ && ival
+(c) vec[ival++] <= vec[ival] //undefined behavior

@@ -1,0 +1,6 @@
+Exercise 4.18: What would happen if the while loop on page 148 that prints the elements from a vector used the prefix increment operator?
+
+Answer:
+Using the prefix increment operator (++pbeg) instead of the postfix operator (pbeg++) would cause two issues:
+1. The first element would be skipped because the increment happens before the dereference.
+2. The loop would attempt to dereference one position past the end of the vector, which is undefined behavior.

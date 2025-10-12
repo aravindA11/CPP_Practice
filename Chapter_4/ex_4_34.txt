@@ -1,0 +1,9 @@
+Exercise 4.34: Given the variable definitions in this section, explain what
+conversions take place in the following expressions:
+(a) if (fval)
+(b) dval = fval + ival;
+(c) dval + ival * cval;
+
+Ans: (a) fval will be converted to bool
+     (b) ival will be converted to float and then to double
+     (c) cval will be converted to ival then they are multiplied later the result will be converted to double

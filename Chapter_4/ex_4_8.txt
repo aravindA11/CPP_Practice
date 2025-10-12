@@ -1,0 +1,6 @@
+Exercise 4.8: Explain when operands are evaluated in the logical AND,
+logical OR, and equality operators.
+left_operand (symbol) right_operand
+
+Ans: For logical OR: the right hand operand is evaluted only if left one is false.
+     For logical AND: the right hand operand is evaluated only if left is true.

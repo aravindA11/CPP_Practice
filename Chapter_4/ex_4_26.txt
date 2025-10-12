@@ -1,0 +1,4 @@
+Exercise 4.26: In our grading example in this section, what would
+happen if we used unsigned int as the type for quiz1?
+
+Ans: There will be no problem even if we mkae it as unsigned. if the size of int is 4 bytes.

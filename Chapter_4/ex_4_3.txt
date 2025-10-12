@@ -1,0 +1,8 @@
+Exercise 4.3: Order of evaluation for most of the binary operators is left
+ undefined to give the compiler opportunities for optimization. This
+ strategy presents a trade-off between efficient code generation and
+ potential pitfalls in the use of the language by the programmer. Do you
+ consider that an acceptable trade-off? Why or why not?
+
+ Ans: If the program handles small events and they happen to be in serial then it is pretty sure that the order is important.
+    If it is a scalable system then yes, this trade off is worth the time.

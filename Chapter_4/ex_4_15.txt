@@ -1,0 +1,6 @@
+Exercise 4.15: The following assignment is illegal. Why? How would you
+ correct it?
+ double dval; int ival; int *pi;
+ dval = ival = pi = 0;
+
+Ans: it is illegal. there is no conversion from pointer to int.
