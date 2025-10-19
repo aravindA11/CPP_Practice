@@ -3,9 +3,6 @@ Common
 > Type of a variable let us know what type of data can be stored and the operations possible on the variable.
 > All the headerfiles must be written in single line.
 > Statements in a program are executed sequentually. 
-> A block({}) is also a statement.
-> A ; is a null statement.
-
 
 Comments
 ========
@@ -39,6 +36,15 @@ Variables
 literals
 > The string literal which we use is of type const char[].
 > false, true are literals of type bool.
+
+
+
+Expressions:
+============
+> The compiler follows precedence and associativity to execute an expression.
+> A class can define its own overloading operator to write its own behavior when the opertor is applied. 
+But the precedence number of operands, associativity doesn't change.
+
 
 Compound Types:
 ==============
@@ -103,6 +109,11 @@ int ar1[5] = {1,2,3,4,5};
 
 Flow of Control
 ==============
+Statements:
+>  The simplest statement is the empty statement, also known as a null statement (;)
+> A block is a (possibly empty) sequence of statements and declarations surrounded by a pair of curly braces.
+>  A block is not terminated by a semicolon.
+> 
 > flow-of-control statements that allow for more complicated execution paths.
 	While Statement:
 		> It repeatedly executes a section so long as a given condition is true.
@@ -115,17 +126,41 @@ Flow of Control
 		> A header itself consists of 3 parts:
 			an init statement, a condition, an expression
 		> init statement is executed once and then the loop starts as long as the condition becomes false, the expression executes at the end of each loop.
+	Do While Statement:
+		> It executes the body and then tests the condition.
+		do
+			statement
+		while (condition);
 	If Statement:
 		> It allows executing a statement when the condition validates to true.
-
-
+		Syntex 1:
+			if(condition)
+				statement
+		Suntex 2:
+			if(condition)
+				statement
+			else
+				statement2
+		> Dangling else: in C++ the ambiguity is resolved by specifying that each else is matched with the closest preceding unmatched if. 
+	Switch Statement:
+		> The switch statement evaluates an integral expression and chooses one of several execution paths based on the expression’s value.
+		>  The case keyword and its associated value together are known as the label. case labels must be integral constant expressions.
+		> The execution starts at the matching expression and continues till the end of switch statement or a break statement.
+		> Switch is the only statement which allows break.
+		>  It is important to understand that execution flows across case labels. After a case label is matched, 
+		execution starts at that label and continues across all the remaining cases or until the program explicitly interrupts it.
+		> Each case label can have only a single value.
+		>  Although it is not necessary to include a break after the last label of a switch, the safest course is to provide one. That way, if an additional
+			case is added later, the break is already in place.
+		>  The statements following the default label are executed when no case label matches the value of the switch expression.
+		>  A label may not stand alone; it must precede a statement or another case label. 
 
 Functions
 =========
 
 > A function generally have 4 parts:
 	Function Name, Return Type, parameters, Function Body.
-> A function body is a block of statements enclosed in a curly braces. This cannot be a single open statement as condition statements.
+> A function body is a block of statements enclosed in a curly braces. This cannot be a single open statement as used by flow of control statements.
 > Main is the only function where the return statement can be avoided.
 
 Q&A
