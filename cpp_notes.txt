@@ -162,6 +162,16 @@ Functions
 	Function Name, Return Type, parameters, Function Body.
 > A function body is a block of statements enclosed in a curly braces. This cannot be a single open statement as used by flow of control statements.
 > Main is the only function where the return statement can be avoided.
+> A parameter that has a top-level const is indistinguishable from one without a top-level const.
+> If the parameter lists of two functions match but the return types differ, then the second declaration is an error.
+> We cannot define functions inside functions but declarations of functions possible.
+> Function overloading follows scope.
+> Functions with default arguments can be called with or without that argument. 
+> If a parameter has a default argument, all the parameters that follow it must also have default arguments.
+> The default arguments are used for the trailing (right-most) arguments of a call.
+> Any subsequent declaration can add a default only for a parameter that has not previously had a default specified
+> If there are no viable functions, the compiler will complain that there is no matching function.
+> 
 
 Q&A
 
