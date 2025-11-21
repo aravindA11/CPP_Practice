@@ -28,6 +28,7 @@ Variables
 > A variable name cannot start with a number. _, alphabets are allowed.
 > Numbers can be part of the variable names.
 > The default value of a variable is zero in golbal scope and random value if it is defined inside a function.
+> there is no character with '' but string works fine with "".
 
 > Variable follows scope where it is defined.
 > Everyname used in a c++ program must be declared before using it.
@@ -189,30 +190,45 @@ Classes
 =======
 > Every class defines a type. The type name is the same as the name of the class.
 > Eaach and every class have a default constructor, destructor, copy constructor, copy operator, move constructor, move operator defined by the compilers.
+> Constructors doesn't have return type.
+> The name of a constructor should be same as name of class. It is used to initialise the data members of the object.
+> Constructors can be overloaded. Constructors cannot be const they are used to initialise members of the object regardless of constness of object.
 > Copy and move constructors are created even after we defined our own constructor.
 > Accesses specifiers are applicable to every entitiy(methods, constructors, static variables/methods, using declarations) present in the class except for friends.
+> Compiler processes classes in two steps—the member declarations are compiled first, after which the member
+ function bodies, if any, are processed.
+> By the time the body of constructors starts executing the members are initialised.
+> We use this to implicitly call members of the current object. this has a type of constant pointer.
+> Friend members can be defined in the class but inordered to be used outside of the class they must be declared in the scope outside of the class.
+> The explicit, static keywords are used only on the constructor declaration inside the class. They are not repeated on a definition made outside the
+ class body.
 
 Initializer List:
-> Initializer list allows providing values to constant objects
+> Initializer list allows providing values to constant objects.
 > The list members are initialized based on the order of their declarations in the class not the way they are written in the initilzer list
 > Initializer list values are given preference over in class initialzation values.
 > It is mainly used for initialising constants, references, base part of derived classes.
 
 Functions inside Classes:
-> Functions inside classes are called methods
-> Each and every method of a class can have their own static members, including constructors they are indipendent of objects.
+> Functions inside classes are called methods.
+> Methods of a class must be declared inside the class. At the same time definitions can be at any place.
+> The declarations, definitions must match including const.
+> Functions defined in the class are implicitly inline.
+> 
+> Each and every method of a class can have their own static members, including constructors they are independent of objects.
 > Functions can be left declared but not defined as long as they are not used by the object defined by the class.
 > Methods and destructor are the only entities that can be override in Inheritence of classes
 > Static functions can be called without creating objects.
-> this is the default parameter passed to every method of a class. It is not applicable with static functions
+> this is the default parameter passed to every method of a class. It is not applicable with static functions.
 
 Q&A
-> Can static members be initialised in initializer list?
-	No, they should not initialise them in initialiser list
+> Constructors be constant?
 > What are the use cases of initialzer list?
 	They are mainly used to initlaize constant variables, references, derived class initilize their base part
 > Can we use this in initializer list?
 	Yes, using this in initializer list is allowed.
+> Can static members be initialised in initializer list?
+	No, one should not initialise them in initialiser list
 > How cin can be used as a condition for control statements?
 	It is done via bool operator ooverloading by the class
 > Can we call a method of a class without creating a object?

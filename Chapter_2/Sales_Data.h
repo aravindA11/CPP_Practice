@@ -11,7 +11,7 @@ Exercise 2.41: Use your Sales_data class to rewrite the exercises in §
 #include<string>
 
 struct Sales_data{
-    double revenue=0;
+    double revenue = 0;
     std::string isbn_no;
     int units_sold;
 };
