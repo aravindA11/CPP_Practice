@@ -164,7 +164,7 @@ Functions
 > A function body is a block of statements enclosed in a curly braces. This cannot be a single open statement as used by flow of control statements.
 > Main is the only function where the return statement can be avoided.
 > A parameter that has a top-level const is indistinguishable from one without a top-level const.
-> If the parameter lists of two functions match but the return types differ, then the second declaration is an error.
+> Function overloading doesn't happen if the return type is the only difference, the second declaration is an error.
 > We cannot define functions inside functions but declarations of functions possible.
 > Function overloading follows scope.
 > Functions with default arguments can be called with or without that argument. 
@@ -200,14 +200,15 @@ Classes
 > By the time the body of constructors starts executing the members are initialised.
 > We use this to implicitly call members of the current object. this has a type of constant pointer.
 > Friend members can be defined in the class but inordered to be used outside of the class they must be declared in the scope outside of the class.
-> The explicit, static keywords are used only on the constructor declaration inside the class. They are not repeated on a definition made outside the
+> The explicit, static keywords are used only on the declaration inside the class. They are not repeated on a definition made outside the
  class body.
 
 Initializer List:
 > Initializer list allows providing values to constant objects.
-> The list members are initialized based on the order of their declarations in the class not the way they are written in the initilzer list
+> The list members are initialized based on the order of their declarations in the class not the way they are written in the initilzer list.
 > Initializer list values are given preference over in class initialzation values.
 > It is mainly used for initialising constants, references, base part of derived classes.
+> We can't initialise static members in initialiser list.
 
 Functions inside Classes:
 > Functions inside classes are called methods.
@@ -216,7 +217,7 @@ Functions inside Classes:
 > Functions defined in the class are implicitly inline.
 > 
 > Each and every method of a class can have their own static members, including constructors they are independent of objects.
-> Functions can be left declared but not defined as long as they are not used by the object defined by the class.
+> Methods can be left declared but not defined as long as they are not used by the object defined by the class.
 > Methods and destructor are the only entities that can be override in Inheritence of classes
 > Static functions can be called without creating objects.
 > this is the default parameter passed to every method of a class. It is not applicable with static functions.
